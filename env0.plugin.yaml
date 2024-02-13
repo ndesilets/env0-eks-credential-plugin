@@ -1,0 +1,7 @@
+name: EKS Credentials
+icon: 
+inputs: {}
+run:
+  exec: |
+    git clone --depth=1 --single-branch https://github.com/ndesilets/env0-eks-credentials-plugin
+    ./env0-eks-credentials-plugin/set-eks-credential.sh
