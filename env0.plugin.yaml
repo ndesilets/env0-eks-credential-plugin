@@ -1,7 +1,9 @@
 name: EKS Credentials
-icon: 
+icon: https://i.imgur.com/Xfigdqj.jpeg
 inputs: {}
 run:
   exec: |
-    git clone --depth=1 --single-branch https://github.com/ndesilets/env0-eks-credentials-plugin
-    ./env0-eks-credentials-plugin/set-eks-credential.sh
+    if [[ ! -d env0-eks-credential-plugin ]]; then
+      git clone --depth=1 --single-branch https://github.com/ndesilets/env0-eks-credential-plugin
+    fi
+    ./env0-eks-credential-plugin/set-eks-credential.sh
