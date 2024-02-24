@@ -6,7 +6,7 @@ This plugin will setup EKS credentials for Env0 containers at run-time for use c
 
 - The parent Project must have AWS credentials with permissions to manage your target EKS cluster.
 - The Environment must have the following environment variable(s):
-    - TARGET_EKS_CLUSTER: name of EKS cluster
+- TARGET_EKS_CLUSTER: name of EKS cluster
 
 ## Example Usage
 
@@ -19,5 +19,5 @@ deploy:
     setupVariables:
       after:
         - name: Set EKS Credentials
-          use: https://github.com/ndesilets/env0-eks-credential-plugin@main
+          use: https://github.com/Slickdeals/env0-plugin-eks-credentials.git@main
 ```
