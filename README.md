@@ -19,5 +19,5 @@ deploy:
     setupVariables:
       after:
         - name: Set EKS Credentials
-          use: https://github.com/Slickdeals/env0-plugin-eks-credentials.git@main
+          use: https://github.com/Slickdeals/env0-plugin-eks-credentials@main
 ```
